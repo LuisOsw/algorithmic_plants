@@ -7,7 +7,7 @@
 
 li {
   list-style-type: none;
-  color: #B9B9B9;
+  color: #7B7B7B;
   margin: 10px;
   font-family: 'Special Elite', cursive;
   font-size: 13px;
@@ -15,7 +15,11 @@ li {
 
 li.plants:hover {
   color: black;
-  background-color: #B9B9B9;
+  background-color: #7B7B7B;
+}
+
+.plants.selected_plant {
+  color: white;
 }
 
 .navbar-inverse.tree_list {

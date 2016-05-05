@@ -1,5 +1,5 @@
 var plants = {
-  1: {
+  0: {
     name: 'bush',
     axiom: 'F',
     rules: {
@@ -12,7 +12,7 @@ var plants = {
     maxClicks: 4
   },
 
-  2: {
+  1: {
     name: 'kelpy',
     axiom: 'F',
     rules: {
@@ -24,7 +24,7 @@ var plants = {
     maxClicks: 5
   },
 
-  3: {
+  2: {
     name: 'feathery',
     axiom: 'X',
     rules: {
@@ -37,7 +37,7 @@ var plants = {
     maxClicks: 6
   },
 
-  4: {
+  3: {
     name: 'spades',
     axiom: 'X',
     rules: {
@@ -50,7 +50,7 @@ var plants = {
     maxClicks: 8
   },
 
-  5: {
+  4: {
     name: 'hay fever',
     axiom: 'X',
     rules: {
@@ -64,7 +64,7 @@ var plants = {
   },
 
   // my own pattern - japanese waves-esque
-  6: {
+  5: {
     name: 'woodblock waves',
     axiom: 'X',
     rules: {
@@ -78,7 +78,7 @@ var plants = {
   },
 
   // spiral fan
-  7: {
+  6: {
     name: 'spiral fan',
     axiom: 'X',
     rules: {

@@ -1,17 +1,38 @@
 $( document ).ready( function() {
+
+  // randomly generate a plant
+  var random_plant = Math.floor(
+    Math.random() * Object.keys(plants).length
+  );
+  var selected_plant = random_plant;
+
   // populate the nav bar on initial load
   Object.keys(plants).forEach(function(key) {
     var name = plants[key].name;
-    $("#navbar").append('<li class="plants">' + name + '</li>');
+    $("#navbar").append(
+      '<li class="plants" id="' + key + '">' + name + '</li>'
+    );
   });
+
+  plant = plants[selected_plant];
+  $('#' + selected_plant).addClass(
+    'selected_plant'
+  );
 
   $('.plants').on('click', function() {
-    // declared in sketch.js
-    var plant = $(this).index();
+    $('#' + selected_plant).removeClass(
+      'selected_plant'
+    );
+    selected_plant = this.id;
+    $('#' + selected_plant).addClass(
+      'selected_plant'
+    );
 
-
-    // plant = new Plant().plant;
-    // turtle = new Turtle(plant);
-    // lsys = new LSystem(plant, turtle);
+    // set all of the variables anew
+    clicks = 0;
+    plant = plants[selected_plant];
+    turtle = new Turtle(plant);
+    lsys = new LSystem(plant, turtle);
   });
+
 });

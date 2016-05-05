@@ -11,12 +11,9 @@ function setup() {
     window.innerWidth,
     window.innerHeight
   );
-
-  var num = Math.round(random(1, 7));
-  plant = plants[num];
-  // blueprints([num]);
   turtle = new Turtle(plant);
   lsys = new LSystem(plant, turtle);
+  noLoop();
 }
 
 function draw() {
@@ -111,11 +108,12 @@ function Turtle(plant) {
 }
 
 function mouseClicked() {
+  console.log(plant.maxClicks);
+  console.log(clicks);
   if (clicks <= plant.maxClicks) {
     lsys.generate();
     turtle.shrink();
-  } else {
-    noLoop();
+    redraw();
   }
   clicks++;
 }
