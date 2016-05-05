@@ -15,18 +15,17 @@ function setup() {
 function draw() {
   push();
   background(0);
-  translate(
-    width / 2,
-    height - 100
-  );
   stroke(255, 50);
+  turtle.translateStart();
+  // translate(
+  //   width / 2,
+  //   height - 100
+  // );
   lsys.render();
   pop();
 }
 
 function mouseClicked() {
-  console.log(plant.maxClicks);
-  console.log(clicks);
   if (clicks <= plant.maxClicks) {
     lsys.generate();
     turtle.shrink();

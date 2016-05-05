@@ -35,7 +35,6 @@ function LSystem(plant, turtle) {
       var character = this.axiom.charAt(i);
       switch(character) {
         case 'F':
-
           line(0, 0, 0, -this.turtle.length);
           translate(0, -this.turtle.length);
           break;

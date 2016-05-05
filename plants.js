@@ -9,7 +9,9 @@ var plants = {
     lengthFactor: 0.5,
     // initial length gets divided by height
     initialLength: 4.5,
-    maxClicks: 4
+    maxClicks: 4,
+    translateX: 100,
+    translateY: null,
   },
 
   1: {
@@ -21,7 +23,9 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 3,
-    maxClicks: 5
+    maxClicks: 5,
+    translateX: null,
+    translateY: null,
   },
 
   2: {
@@ -34,7 +38,9 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 3.5,
-    maxClicks: 6
+    maxClicks: 6,
+    translateX: null,
+    translateY: null,
   },
 
   3: {
@@ -47,7 +53,9 @@ var plants = {
     rotation: 25.7,
     lengthFactor: 0.5,
     initialLength: 3,
-    maxClicks: 8
+    maxClicks: 8,
+    translateX: null,
+    translateY: null,
   },
 
   4: {
@@ -60,7 +68,9 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 3,
-    maxClicks: 8
+    maxClicks: 8,
+    translateX: null,
+    translateY: null,
   },
 
   // my own pattern - japanese waves-esque
@@ -74,7 +84,9 @@ var plants = {
     rotation: 22.5,
     lengthFactor: 0.5,
     initialLength: 6,
-    maxClicks: 6
+    maxClicks: 6,
+    translateX: null,
+    translateY: null,
   },
 
   // spiral fan
@@ -87,7 +99,9 @@ var plants = {
     },
     rotation: 20,
     lengthFactor: 0.5,
-    initialLength: 3,
-    maxClicks: 6
+    initialLength: 2.5,
+    maxClicks: 6,
+    translateX: -50,
+    translateY: -100,
   }
 }
