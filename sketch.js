@@ -1,3 +1,6 @@
+// notes: don't loop when not clicking --> this will make it more performant
+// also add an info section to grab plant meta data and display.
+// then make 3D
 var lsys;
 var turtle;
 var clicks = 0;
