@@ -15,7 +15,6 @@ li {
 
 li.plants:hover {
   color: white;
-  /*background-color: #7B7B7B;*/
 }
 
 .plants.selected_plant {
@@ -31,36 +30,25 @@ li.plants:hover {
     margin-top: 100px;
   }
 }
-/*@media (min-width: 768px) {
 
-  #menu-bar .panel {
-  margin-bottom: 0;
-  background-color: rgba(0,0,0,0);
-  border: none;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  }*/
+#menu-bar li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  #menu-bar li a {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-  }
+#navbar {
+  float: left;
+  width: 200px;
+  height: 100%;
+  padding: 40px;
+}
 
-  #navbar {
-    float: left;
-    width: 200px;
-    height: 100%;
-    padding: 40px;
-  }
+.content {
+  margin-left: 200px;
+  min-height: 100%;
+}
 
-  .content {
-    margin-left: 200px;
-    min-height: 100%;
-  }
-
-  .container {
-    margin-left: 25px;
-  }
+.container {
+  margin-left: 25px;
 }

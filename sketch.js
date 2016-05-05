@@ -1,6 +1,7 @@
 var lsys;
 var turtle;
 var clicks = 0;
+var framesPassed = 0;
 
 function setup() {
   createCanvas(
@@ -9,29 +10,22 @@ function setup() {
   );
   turtle = new Turtle(plant);
   lsys = new LSystem(plant, turtle);
-  noLoop();
+  frameRate(4);
 }
 
 function draw() {
+  if (framesPassed >= plant.maxGenerations) {
+    noLoop();
+  }
   push();
   background(0);
   stroke(255, 50);
+  turtle.shrink();
   turtle.translateStart();
-  // translate(
-  //   width / 2,
-  //   height - 100
-  // );
+  lsys.generate();
   lsys.render();
   pop();
-}
-
-function mouseClicked() {
-  if (clicks <= plant.maxClicks) {
-    lsys.generate();
-    turtle.shrink();
-    redraw();
-  }
-  clicks++;
+  framesPassed++;
 }
 
 function windowResized() {

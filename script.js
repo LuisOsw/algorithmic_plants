@@ -33,6 +33,9 @@ $( document ).ready( function() {
     plant = plants[selected_plant];
     turtle = new Turtle(plant);
     lsys = new LSystem(plant, turtle);
+    framesPassed = 0;
+    loop();
   });
+
 
 });

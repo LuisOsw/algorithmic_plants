@@ -1,4 +1,6 @@
 var plants = {
+  // from algorithmic botany
+  // by Lindenmayer and Prusinkiewicz
   0: {
     name: 'bush',
     axiom: 'F',
@@ -9,13 +11,13 @@ var plants = {
     lengthFactor: 0.5,
     // initial length gets divided by height
     initialLength: 4.5,
-    maxClicks: 4,
+    maxGenerations: 4,
     translateX: 100,
     translateY: null,
   },
 
   1: {
-    name: 'kelpy',
+    name: 'fern',
     axiom: 'F',
     rules: {
       F: 'F[+F]F[-F][F]'
@@ -23,7 +25,7 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 2.5,
-    maxClicks: 5,
+    maxGenerations: 5,
     translateX: null,
     translateY: null,
   },
@@ -38,7 +40,7 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 3.5,
-    maxClicks: 6,
+    maxGenerations: 6,
     translateX: null,
     translateY: null,
   },
@@ -53,7 +55,7 @@ var plants = {
     rotation: 25.7,
     lengthFactor: 0.5,
     initialLength: 2.6,
-    maxClicks: 8,
+    maxGenerations: 8,
     translateX: null,
     translateY: null,
   },
@@ -68,12 +70,12 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 2.8,
-    maxClicks: 8,
+    maxGenerations: 8,
     translateX: null,
     translateY: null,
   },
 
-  // my own pattern - japanese waves-esque
+  // plants that I've invented
   5: {
     name: 'woodblock waves',
     axiom: 'X',
@@ -84,12 +86,11 @@ var plants = {
     rotation: 22.5,
     lengthFactor: 0.5,
     initialLength: 6,
-    maxClicks: 6,
+    maxGenerations: 6,
     translateX: null,
     translateY: null,
   },
 
-  // spiral fan
   6: {
     name: 'spiral fan',
     axiom: 'X',
@@ -100,9 +101,38 @@ var plants = {
     rotation: 20,
     lengthFactor: 0.5,
     initialLength: 2.5,
-    maxClicks: 6,
+    maxGenerations: 6,
     translateX: -50,
     translateY: -100,
-  }
+  },
 
+  7: {
+    name: 'spidery',
+    axiom: 'X',
+    rules: {
+      X: '+F[--[]-[X]-X]-F[-FX]+X',
+      F: 'FF'
+    },
+    rotation: 20,
+    lengthFactor: 0.5,
+    initialLength: 3,
+    maxGenerations: 6,
+    translateX: null,
+    translateY: 50,
+  },
+
+  8: {
+    name: 'lace',
+    axiom: 'X',
+    rules: {
+      X: 'F[-F-X][+X]FX',
+      F: 'FF'
+    },
+    rotation: 25.7,
+    lengthFactor: 0.5,
+    initialLength: 2.6,
+    maxGenerations: 8,
+    translateX: null,
+    translateY: null,
+  },
 }
