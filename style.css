@@ -14,8 +14,8 @@ li {
 }
 
 li.plants:hover {
-  color: black;
-  background-color: #7B7B7B;
+  color: white;
+  /*background-color: #7B7B7B;*/
 }
 
 .plants.selected_plant {

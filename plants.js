@@ -22,7 +22,7 @@ var plants = {
     },
     rotation: 20,
     lengthFactor: 0.5,
-    initialLength: 3,
+    initialLength: 2.5,
     maxClicks: 5,
     translateX: null,
     translateY: null,
@@ -52,7 +52,7 @@ var plants = {
     },
     rotation: 25.7,
     lengthFactor: 0.5,
-    initialLength: 3,
+    initialLength: 2.6,
     maxClicks: 8,
     translateX: null,
     translateY: null,
@@ -67,7 +67,7 @@ var plants = {
     },
     rotation: 20,
     lengthFactor: 0.5,
-    initialLength: 3,
+    initialLength: 2.8,
     maxClicks: 8,
     translateX: null,
     translateY: null,
@@ -104,4 +104,5 @@ var plants = {
     translateX: -50,
     translateY: -100,
   }
+
 }
