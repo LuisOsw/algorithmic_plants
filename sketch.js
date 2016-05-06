@@ -2,6 +2,8 @@ var lsys;
 var turtle;
 var clicks = 0;
 var framesPassed = 0;
+var originalHeight;
+var originalWidth;
 
 function setup() {
   createCanvas(
@@ -11,6 +13,8 @@ function setup() {
   turtle = new Turtle(plant);
   lsys = new LSystem(plant, turtle);
   frameRate(4);
+  originalWidth = width;
+  originalHeight = height;
 }
 
 function draw() {
@@ -28,11 +32,13 @@ function draw() {
   framesPassed++;
 }
 
-function windowResized() {
-  resizeCanvas(
-    window.innerWidth,
-    window.innerHeight
-  );
-  background(0);
-  redraw();
-}
+// function windowResized() {
+//   resizeCanvas(
+//     window.innerWidth,
+//     window.innerHeight
+//   );
+
+//   lsys = null;
+//   background(0);
+//   noLoop();
+// }

@@ -27,9 +27,8 @@ $( document ).ready( function() {
     $('#' + selected_plant).addClass(
       'selected_plant'
     );
-
+    console.log(framesPassed);
     // set all of the variables anew
-    clicks = 0;
     plant = plants[selected_plant];
     turtle = new Turtle(plant);
     lsys = new LSystem(plant, turtle);
