@@ -136,7 +136,6 @@ var plants = {
     translateY: null,
   },
 
-
   9: {
     name: 'baroque',
     axiom: 'F',
