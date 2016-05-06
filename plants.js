@@ -135,4 +135,20 @@ var plants = {
     translateX: null,
     translateY: null,
   },
+
+
+  9: {
+    name: 'baroque',
+    axiom: 'F',
+    rules: {
+      F: 'FF[-F][+F][-F+F]',
+    },
+    rotation: 25.7,
+    lengthFactor: 0.5,
+    initialLength: 3.5,
+    maxGenerations: 5,
+    translateX: null,
+    translateY: null,
+  },
+
 }
