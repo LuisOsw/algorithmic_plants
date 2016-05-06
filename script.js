@@ -4,7 +4,7 @@ $( document ).ready( function() {
   var random_plant = Math.floor(
     Math.random() * Object.keys(plants).length
   );
-  var selected_plant = random_plant;
+  selected_plant = random_plant;
 
   // populate the nav bar on initial load
   Object.keys(plants).forEach(function(key) {
@@ -20,6 +20,7 @@ $( document ).ready( function() {
   );
 
   $('.plants').on('click', function() {
+    noLoop();
     $('#' + selected_plant).removeClass(
       'selected_plant'
     );
@@ -27,7 +28,6 @@ $( document ).ready( function() {
     $('#' + selected_plant).addClass(
       'selected_plant'
     );
-    console.log(framesPassed);
     // set all of the variables anew
     plant = plants[selected_plant];
     turtle = new Turtle(plant);
@@ -35,6 +35,5 @@ $( document ).ready( function() {
     framesPassed = 0;
     loop();
   });
-
 
 });
